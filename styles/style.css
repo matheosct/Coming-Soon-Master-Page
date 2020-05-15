@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  font-family: 'Josefin Sans', sans-serif;
+  background-image: url(/img/bg-pattern-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image {
+  height: 100vh;
+  width: 50vw;
+  background-image: url(/img/hero-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 300;
+  color: #ce9797;
+  letter-spacing: 30px;
+  line-height: 75px;
+  width: 50vw;
+}
+
+h1 span {
+  color: #413a3a;
+  font-weight: 600;
+}
+
+section {
+  margin-top: 48px;
+  margin-left: 230px;
+  margin-right: auto;
+  width: 30vw;
+}
+
+section .logo {
+  margin-bottom: 140px;
+}
+
+section .logo img {
+  height: 40px;
+  width: auto;
+}
+
+.content p {
+  color: #ce9797;
+  margin-top: 42px;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input[type=email] {
+  width: 100%;
+  height: 54px;
+  border: solid 1px #ce9797;
+  background-color: transparent;
+  border-radius: 32px;
+  padding: 0 32px;
+  opacity: 50%;
+}
+
+input[type=email]::-webkit-input-placeholder {
+  color: #f96262;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  opacity: 50%;
+}
+
+input[type=email]:-ms-input-placeholder {
+  color: #f96262;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  opacity: 50%;
+}
+
+input[type=email]::-ms-input-placeholder {
+  color: #f96262;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  opacity: 50%;
+}
+
+input[type=email]::placeholder {
+  color: #f96262;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  opacity: 50%;
+}
+
+input[type=email]:focus {
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  opacity: 100%;
+  vertical-align: text-bottom;
+}
+
+input[type=email]:focus:invalid {
+  border: solid 1px #f96262;
+  opacity: 100%;
+}
+
+button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 54px;
+  width: 105px;
+  border-radius: 32px;
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border: none;
+  margin-top: auto;
+  margin-left: -50px;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 10px 20px 0px #ce9797;
+          box-shadow: 0px 10px 20px 0px #ce9797;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-image: linear-gradient(135deg, white, #f8bfbf);
+}
+
+#error {
+  margin-left: 70%;
+  margin-top: -40px;
+  display: none;
+}
+
+#warn {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 14px;
+  color: #f96262;
+  display: none;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  height: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer p {
+  font-size: 12px;
+  color: #FFF !important;
+}
+
+footer a {
+  text-decoration: none;
+  color: #63F767;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+footer a:hover {
+  color: #11aa16;
+}
+
+@media (max-width: 860px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  section {
+    margin: 0;
+    width: 100%;
+  }
+  section .logo {
+    margin: 60px 0;
+    margin-left: 60px;
+  }
+  .image {
+    display: none;
+    width: 0;
+  }
+  .image-phone {
+    display: block;
+    width: 100vw;
+    height: 50vh;
+    background-image: url(/img/hero-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 60px;
+  }
+  .content {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
