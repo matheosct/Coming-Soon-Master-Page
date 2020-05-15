@@ -3,5 +3,4 @@ Template feito como forma de exercitar minha prática utilizando layouts de terc
 
 Layout retirado do site <a href="https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0">Frontend Mentor</a>
 
-<a href="https://sass-lang.com/">Sass</a> <br />
-<a href="https://jquery.com/">JavaScript</a>
+<a href="https://sass-lang.com/">Sass</a>
