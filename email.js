@@ -13,7 +13,8 @@ emailInput.addEventListener("keyup", (e) => {
     emailValue = e.target.value;
 });
 
-btnSub.addEventListener("click", () => {
+btnSub.addEventListener("click", (e) => {
+    e.preventDefault();
     if (emailValue.length === 0 || validateEmail(emailValue) === false) {
         error.style.display = "flex";
         icon.style.display ="flex";
